@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Valentine;
+    src: url(../fonts/valentine_cute/Valentine\ Cute.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: University_2;
+    src: url(../fonts/university_2/University.otf) format(truetype);
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +38,7 @@ body {
 }
 
 .nome-empresa {
+    font-family: Valentine;
     font-size: 28px;
 }
 
@@ -84,6 +97,13 @@ body {
     font-size: 32px;
     color: #b91f3a;
     margin-bottom: 25px;
+}
+
+.video {
+    background-color: rgb(255, 0, 0);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 100px #00000020;
 }
 
 .texto-apresentacao {
@@ -161,8 +181,8 @@ body {
 
 .imagem-namorado {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 310px;
+    object-fit: inherit;
     border-radius: 8px;
 }
 
@@ -182,10 +202,41 @@ body {
     color: #84142a;
 }
 
+.valor-namorado strong {
+    color: rgb(203, 203, 9);
+    font-style: italic;
+    font-size: x-large;
+}
+
 .tabela-assinaturas {
     width: 100%;
     border-collapse: collapse;
     background-color: white;
+}
+
+.Básico {
+    font-style: oblique;
+    color: rgb(110, 78, 19);
+}
+
+.Premium {
+    font-style: italic;
+    font-size: x-large;
+    color: gold;
+}
+
+.VIP {
+    font-style: initial;
+    font-weight: bold;
+    font-size: xx-large;
+    color: royalblue;
+}
+
+.ULTIMATE{
+    font-family: University_2;
+    font-weight: bold;
+    font-size:larger ;
+    color: rgb(135, 135, 135);
 }
 
 .tabela-assinaturas th,
