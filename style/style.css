@@ -161,7 +161,7 @@ body {
 
 
 .card-namorado {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 3px 10px #00000020;
@@ -171,6 +171,37 @@ body {
 
 .card-namorado:hover {
     transform: translateY(-5px);
+}
+
+.card-namorado-vedilson{
+    background-color: rgb(57, 56, 56);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000020;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-namorado-vedilson:hover {
+    transform: translateY(-5px);
+}
+
+.nome-namorado-vedilson {
+    margin: 15px 0 10px;
+    font-weight: bold;
+    color: #b91f3a;
+}
+
+.descricao-namorado-vedilson {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: white;
+}
+
+.valor-namorado-vedilson {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .imagem-namorado {
