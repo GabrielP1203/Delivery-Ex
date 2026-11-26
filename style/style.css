@@ -42,16 +42,16 @@ body {
     font-size: 28px;
 }
 
-.container {
-    display: flex;
+.estrutura {
     min-height: 80vh;
 }
 
+
+
 .barra-lateral {
-    width: 230px;
-    background-color: #f4dadd;
-    padding: 25px 15px;
+ background-color: #f4dadd;
 }
+
 
 .titulo-menu {
     color: #b91f3a;
@@ -61,10 +61,7 @@ body {
 
 .lista-menu {
     list-style: none;
-}
-
-.lista-menu li {
-    margin-bottom: 15px;
+    padding-left: 0;
 }
 
 .link-menu {
@@ -103,7 +100,8 @@ body {
     background-color: rgb(255, 0, 0);
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 100px #00000020;
+    aspect-ratio: 16 / 9;
+    height: auto;
 }
 
 .texto-apresentacao {
@@ -160,11 +158,7 @@ body {
     margin: 30px 0 20px;
 }
 
-.lista-catalogo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
+
 
 .card-namorado {
     background-color: white;
@@ -232,10 +226,10 @@ body {
     color: royalblue;
 }
 
-.ULTIMATE{
+.ULTIMATE {
     font-family: University_2;
     font-weight: bold;
-    font-size:larger ;
+    font-size: larger;
     color: rgb(135, 135, 135);
 }
 
@@ -332,7 +326,7 @@ body {
 
 .lista-perguntas {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 20px;
 }
 
@@ -371,92 +365,4 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-@media (max-width: 900px) {
-    .lista-catalogo {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .etapas,
-    .lista-objetivos {
-        flex-wrap: wrap;
-    }
-
-    .card-etapa,
-    .card-objetivo {
-        flex: 1 1 200px;
-    }
-}
-
-@media (max-width: 600px) {
-    .cabecalho {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .nome-empresa {
-        font-size: 23px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .barra-lateral {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .titulo-menu {
-        margin-bottom: 15px;
-    }
-
-    .lista-menu {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .lista-menu li {
-        margin-bottom: 0;
-    }
-
-    .conteudo-principal {
-        padding: 20px;
-    }
-
-    .apresentacao {
-        padding: 30px 10px;
-    }
-
-    .titulo-apresentacao {
-        font-size: 25px;
-    }
-
-    .lista-catalogo,
-    .lista-perguntas {
-        grid-template-columns: 1fr;
-    }
-
-    .etapas,
-    .lista-objetivos {
-        flex-direction: column;
-    }
-
-    .tabela-assinaturas th,
-    .tabela-assinaturas td {
-        padding: 6px;
-        font-size: 12px;
-    }
-
-    .contato {
-        padding: 15px;
-    }
-
-    .formulario-contato,
-    .formulario-contratacao {
-        padding: 15px;
-    }
 }
